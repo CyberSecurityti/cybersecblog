@@ -1,10 +1,11 @@
+import { HeaderNav } from './components/header/HeaderContent'
 import GlobalStyle from './config/globalStyleConfig'
 
 const App  = () => {
   return(
     <>
     <GlobalStyle />
-      <h1>Inicio</h1>
+    <HeaderNav />
     </>
   )
 }
