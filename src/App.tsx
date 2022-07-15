@@ -1,13 +1,11 @@
-import { HeaderNav } from './components/header/HeaderContent'
-import GlobalStyle from './config/globalStyleConfig'
 
-const App  = () => {
-  return(
-    <>
-    <GlobalStyle />
-    <HeaderNav />
+
+const App = () => {
+  return (
+    <> 
+      <h1>App</h1>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
