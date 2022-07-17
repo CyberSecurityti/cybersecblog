@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { primaryRedColor } from '../../../config/colorPalette';
+import { colorWhite_Gray } from '../../../config/colorPalette';
 
 export const Nav = styled.ul`
     background-color: black;
@@ -16,11 +16,18 @@ export const Nav = styled.ul`
         margin: 15px;
     }
     li {
+        color: black;
         font-family: 'Ubuntu', sans-serif;
         font-weight: 500;
     }
-    li:hover {
-        border-bottom: 4px solid ${primaryRedColor};
-    }
 
-`
+`;
+
+export const Layout = styled.div`
+    height: auto;
+`;
+
+export const activeStyle =  {
+   color: `${colorWhite_Gray}`
+
+}

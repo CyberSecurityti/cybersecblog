@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 import { primaryRedColor, primary_blackColor } from './colorPalette';
 
 
+
 export default createGlobalStyle`
 
     * {
