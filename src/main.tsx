@@ -3,10 +3,12 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Outlet } from "react-router-dom";
 import { RouterConfig } from "./routes";
 import GlobalStyle from "./config/globalStyleConfig";
+import { HeaderNav } from './components/header/Navigation';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
+    <HeaderNav />
       <>
         <GlobalStyle />
         <RouterConfig />

@@ -2,6 +2,7 @@ import { Outlet, NavLink } from 'react-router-dom';
 import { Nav, Layout, activeStyle } from './styles/stylesnav';
 import { FaRegUserCircle, FaSearch } from 'react-icons/fa';
 import { logo } from '../../config/colorPalette'
+
 export const HeaderNav = () => {
 	return (
 		<Layout>
