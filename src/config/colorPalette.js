@@ -8,4 +8,4 @@ export const infoColor = '#0197F6'
 export const errorColor = '#ff3333'
 export const warningColor = '#ffc107'
 
-export const logo = 'https://images.unsplash.com/photo-1658020345672-c890c2a97356?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80'
+export const logo = 'https://i.imgur.com/Cn1zabS.png'
