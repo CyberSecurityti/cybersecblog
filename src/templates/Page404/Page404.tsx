@@ -1,6 +1,7 @@
 import { Page404div, TextArea } from "./style/style";
 import { Link, Navigate} from "react-router-dom";
 import {Howl,Howler} from 'howler'
+import React from 'react';
 
 const Prankkkk = () => {
    const sound = new Howl({

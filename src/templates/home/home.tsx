@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 
@@ -9,7 +10,7 @@ const APP = styled.div`
    width: 100%;
 `
 
-const App = () => {
+const Home  = () => {
 
   return (
 
@@ -19,4 +20,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default Home;
