@@ -36,6 +36,9 @@ const Page404div = styled.div`
 `;
 const TextArea = styled.div`
    height: 50vh;
+   a {
+      cursor: pointer;
+   }
    .Link {
       text-decoration: none;
       margin-right: 20px;

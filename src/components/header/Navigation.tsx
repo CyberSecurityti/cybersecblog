@@ -1,4 +1,4 @@
-import { Outlet, NavLink } from 'react-router-dom';
+import { Outlet, NavLink, NavLinkProps } from 'react-router-dom';
 import { Nav, Layout, activeStyle } from './styles/stylesnav';
 import { FaRegUserCircle, FaSearch } from 'react-icons/fa';
 import { logo } from '../../config/colorPalette'
@@ -14,7 +14,7 @@ export const HeaderNav = () => {
 				<li>
 					<NavLink
 						to={'/'}
-						style={({ isActive }) => {
+						style={({ isActive }): any => {
 							return isActive ? activeStyle : undefined;
 						}}
 					>
@@ -24,7 +24,7 @@ export const HeaderNav = () => {
 				<li>
 					<NavLink
 						to={'/courses'}
-						style={({ isActive }) => {
+						style={({ isActive }): any => {
 							return isActive ? activeStyle : undefined;
 						}}
 					>
@@ -34,8 +34,8 @@ export const HeaderNav = () => {
 				<li>
 					<NavLink
 						to={'/articles'}
-						style={({ isActive }) => {
-							return isActive ? activeStyle : undefined;
+						style={({ isActive   }): any => {
+							return isActive ? activeStyle  : undefined;
 						}}
 					>
 						Artigos

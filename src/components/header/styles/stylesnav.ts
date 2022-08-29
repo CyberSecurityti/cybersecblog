@@ -1,3 +1,4 @@
+import { CSSProperties } from 'react';
 import styled from 'styled-components';
 import { colorWhite_Gray } from '../../../config/colorPalette';
 
@@ -28,6 +29,6 @@ export const Layout = styled.div`
 `;
 
 export const activeStyle =  {
-   color: `${colorWhite_Gray}`
+   color: `${colorWhite_Gray}` as CSSProperties | undefined
 
 }

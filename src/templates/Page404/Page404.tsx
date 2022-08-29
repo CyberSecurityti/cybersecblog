@@ -1,17 +1,26 @@
 import { Page404div, TextArea } from "./style/style";
-import { Link, Navigate} from "react-router-dom";
-import {Howl,Howler} from 'howler'
-import React from 'react';
+import { Link, useNavigate } from "react-router-dom";
+import React, { useEffect, useRef, useState } from "react";
 
-const Prankkkk = () => {
-   const sound = new Howl({
-      src: 'https://memes.casa/audios/gemido-whatsapp.mp3',
-      autoplay: true,
-      loop:false,
-      volume: 0.5,
-   })
-}
 export const Page404 = () => {
+   const [time, setTime] = useState(3);
+   const timeout = useRef(0);
+   const navigate = useNavigate();
+
+   useEffect(() => {
+      clearTimeout(timeout.current);
+      timeout.current = setTimeout(() => {
+        setTime((t) => t - 1);
+      }, 1000);
+
+      if (time < 0) {
+        navigate("/");
+      }
+      return () => {
+        clearTimeout(timeout.current);
+      };
+    }, [time]);
+
    return (
       <Page404div>
          <div className="img">
@@ -21,11 +30,7 @@ export const Page404 = () => {
          <TextArea>
             <h1>404</h1>
             <h2>Página não encontrada</h2>
-            <h3>Voltar pra Home?</h3>
-            <Link to={'/'} className="Link">
-               Sim
-            </Link>
-            <a onClick={Prankkkk} >Não</a>
+            <h3>Voltando para a página inicial! {time}</h3>
          </TextArea>
       </Page404div>
    );
