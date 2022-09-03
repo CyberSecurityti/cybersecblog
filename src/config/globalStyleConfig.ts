@@ -1,5 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
-import { primaryRedColor, primary_blackColor } from './colorPalette';
+import { colorWhite_Gray, primaryRedColor, primary_blackColor } from './colorPalette';
 
 
 
@@ -33,13 +33,12 @@ export default createGlobalStyle`
 
     a {
         text-decoration: none;
-        color: ${primaryRedColor};
+        color: ${colorWhite_Gray};
     }
 
     ul {
         list-style: none;
     }
-
 
 
 `
