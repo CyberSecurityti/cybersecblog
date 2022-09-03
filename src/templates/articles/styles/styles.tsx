@@ -1,10 +1,8 @@
 import styled from 'styled-components';
 
-
-
-export const CouresArea = styled.div`
+export const AticlesArea = styled.div`
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
 `

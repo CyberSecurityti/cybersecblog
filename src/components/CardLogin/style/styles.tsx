@@ -1,4 +1,8 @@
 import styled from "styled-components";
+import {
+   primaryRedColor,
+   secondaryRedColor,
+} from "../../../config/colorPalette";
 
 export const Card = styled.div`
    position: absolute;
@@ -11,7 +15,7 @@ export const Card = styled.div`
    border: 1px solid rgba(255, 255, 255, 0.01);
    height: auto;
    width: 30%;
-   h1{
+   h1 {
       text-align: center;
       margin: 5% 5%;
    }
@@ -34,5 +38,24 @@ export const Card = styled.div`
       button {
          margin: 15px auto;
       }
+      p {
+         text-align: center;
+      }
+      p:hover {
+         color: ${secondaryRedColor};
+         transition: 1s;
+      }
+      hr {
+         width: 60%;
+         margin: 15px auto;
+      }
+      #singup {
+         background-color: black;
+         color: ${primaryRedColor};
+      }
+   }
+   @media (max-width: 900px) {
+      width: 60%;
+      left: 40%;
    }
 `;
