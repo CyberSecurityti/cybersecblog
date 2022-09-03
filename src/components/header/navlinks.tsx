@@ -10,8 +10,8 @@ export const NavLinks = () => {
 
    const closeIcon = (
       <FaRegWindowClose
-         size="40px"
-         color="red"
+         className="icon"
+         size={40}
          onClick={() => {
             setOpen(!abrir);
          }}
@@ -20,7 +20,7 @@ export const NavLinks = () => {
    const userIcon = (
       <FaUserCircle
          className="icon"
-         size="40px"
+         size={40}
          color="red"
          onClick={() => {
             setOpen(!abrir);
